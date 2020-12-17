@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Document</title>
+</head>
+<style type="text/css">
+*{
+	padding: 0px;
+	margin:0px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background:  #9e9494;
+	height: 100vh;
+}
+form{
+	display: flex;
+	flex-flow: column;
+}
+h2{
+	margin-top: 5px;
+}
+label{
+	margin-top: 5px;
+}
+input{
+	margin-top: 5px;
+}
+select{
+	margin-top: 5px;
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+</style>
+<body>
+	<div class="container">
+		<div class="column">
+			<h2>Create new color</h2>
+			<label for="colors">Color</label>
+	  		<input type="text" name="colors" id="colors">
+	 		<label for="types">Type</label>
+	          <select id="types" name="types">
+	              <option value="RGBA">RGBA</option>
+	              <option value="RGB">RGB</option>
+	              <option value="HEX">HEX</option>
+	          </select>
+	        <label for="codes">Code</label>
+	  		<input type="text" name="codes" id="codes">
+             <button type="submit" id="send">Отправить</button>
+        </div>
+             <div id="response">
+		</div>
+	</div>
+	<div class="block" id="block"></div>
+	<script src="main3.js"></script>
+</body>
+<script type="text/javascript">
+
+
+
+</script>
+</html>
